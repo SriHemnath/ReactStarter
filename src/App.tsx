@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { ListGroup } from "./components/ListGroup";
+import Alert from "./components/Alert";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,6 +28,9 @@ function App() {
         items={items}
         onSelection={handleSelectedItem}
       />
+      <p />
+      <h3>Use Ref</h3>
+      <Alert></Alert>
     </>
   );
 }
